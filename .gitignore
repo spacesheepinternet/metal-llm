@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# Data (large — download locally, don't commit)
+data/
+*.pgn
+*.pgn.zst
+*.csv
+
+# Model artifacts / checkpoints
+models/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+outputs/
+adapter/
+lora/
+
+# Experiment tracking
+wandb/
+
+# Secrets / env
+.env
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude local tooling
+.claude/
+
+# Local-only working note (contains personal/career context — keep out of the public repo)
+HANDOFF.md

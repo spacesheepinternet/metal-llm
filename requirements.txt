@@ -1,0 +1,23 @@
+# Core ML / fine-tuning stack
+torch
+transformers
+peft
+trl
+bitsandbytes          # QLoRA quantization — easiest on Linux + NVIDIA GPU
+accelerate
+datasets
+huggingface_hub
+
+# Chess: legality checks, game play, engine interface
+python-chess
+
+# Experiment tracking (optional but recommended)
+wandb
+
+# Utilities
+numpy
+tqdm
+
+# NOTE: Stockfish is a separate native binary, not a pip package.
+# Download it from https://stockfishchess.org/download/ and put it on PATH
+# (or point python-chess at the executable).
