@@ -3,13 +3,14 @@ torch
 transformers
 peft
 trl
-bitsandbytes          # QLoRA quantization — easiest on Linux + NVIDIA GPU
+bitsandbytes          # QLoRA 4-bit quantization (verify on Windows before training)
 accelerate
 datasets
 huggingface_hub
 
-# Chess: legality checks, game play, engine interface
-python-chess
+# DadaGP decode/render path
+pyguitarpro           # required by the official DadaGP encoder/decoder
+scipy                 # WAV writing for the dev-time numpy synth
 
 # Experiment tracking (optional but recommended)
 wandb
@@ -18,6 +19,5 @@ wandb
 numpy
 tqdm
 
-# NOTE: Stockfish is a separate native binary, not a pip package.
-# Download it from https://stockfishchess.org/download/ and put it on PATH
-# (or point python-chess at the executable).
+# NOTE: the DadaGP encoder/decoder itself is not a pip package — clone it:
+#   git clone https://github.com/dada-bots/dadaGP external/dadaGP

@@ -7,11 +7,12 @@ venv/
 .venv/
 env/
 
-# Data (large — download locally, don't commit)
-data/
-*.pgn
-*.pgn.zst
-*.csv
+# Data (large — download locally, don't commit) — except the two tiny MIT-licensed samples
+data/*
+!data/samples/
+
+# Vendored external repos (clone locally, see README)
+external/
 
 # Model artifacts / checkpoints
 models/
@@ -22,6 +23,12 @@ checkpoints/
 outputs/
 adapter/
 lora/
+
+# Generated audio / GuitarPro files (dev-time renders)
+*.wav
+*.gp5
+*.gp4
+*.gp3
 
 # Experiment tracking
 wandb/
@@ -39,5 +46,6 @@ Thumbs.db
 # Claude local tooling
 .claude/
 
-# Local-only working note (contains personal/career context — keep out of the public repo)
+# Local-only working notes (personal/career context — keep out of the public repo)
 HANDOFF.md
+notes/

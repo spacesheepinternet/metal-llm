@@ -1,0 +1,281 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "summary": {
+    "zero_shot": {
+      "n": 10,
+      "mean_token_validity": 0.7063,
+      "seq_validity_rate": 0.1,
+      "pct_with_measure": 0.1,
+      "pct_with_note": 1.0
+    },
+    "one_shot": {
+      "n": 10,
+      "mean_token_validity": 0.96,
+      "seq_validity_rate": 0.9,
+      "pct_with_measure": 1.0,
+      "pct_with_note": 1.0
+    }
+  },
+  "generations": [
+    {
+      "cond": "zero_shot",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 14,
+        "token_validity": 0.5714,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:0\ntempo:120\nstart\ndistorted0:note:s2:f5\ndistorted0:note:s3:f4\ndistorted0:wait:480\ndistorted0:nfx:palm_mute\ndistorted0:wait:1920\ndistorted0:note:s1:f3\ndistorted0:wait:720\ndistorted0:nfx:palm_mute\ndistorted0:wait:1440\ndistorted0:note:s4:f2\nend"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 15,
+        "token_validity": 0.4,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:2\ntempo:120\nstart\ndistorted0:wait:480\ndistorted0:new_measure\ndistorted0:start\ndistorted0:nfx:palm_mute\ndistorted0:note:s5:f2\ndistorted0:wait:120\ndistorted0:note:s6:f1\ndistorted0:wait:120\ndistorted0:nfx:palm_mute\ndistorted0:note:s4:f2\ndistorted0:wait:120\ndistorted0:end"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 160,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 14,
+        "token_validity": 1.0,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:0\ntempo:160\nstart\ndistorted0:note:s2:f1\nwait:8\ndistorted0:note:s3:f2\nwait:16\ndistorted0:note:s5:f3\nwait:8\ndistorted0:note:s4:f4\nwait:8\ndrums:note:36\nwait:16\nend"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 160,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 17,
+        "token_validity": 0.5882,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:2\ntempo:160\nstart\ndistorted0:wait:480\ndistorted0:note:s5:f1\ndistorted0:wait:480\ndistorted0:note:s4:f2\ndistorted0:wait:480\ndistorted0:note:s3:f3\ndistorted0:wait:480\ndistorted0:note:s2:f4\ndistorted0:wait:480\ndistorted0:note:s1:f5\ndistorted0:nfx:palm_mute\ndistorted0:wait:480\ndistorted0:note:s6:f0\nend"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 180,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 20,
+        "token_validity": 0.35,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:0\ntempo:180\nstart\ndistorted0:new_measure\ndistorted0:start\ndistorted0:note:s2:f7\ndistorted0:nfx:hammer_on\ndistorted0:new_measure\ndistorted0:start\ndistorted0:note:s2:f6\ndistorted0:nfx:pull_off\ndistorted0:new_measure\ndistorted0:start\ndistorted0:note:s2:f5\ndistorted0:nfx:slide_to\ndistorted0:new_measure\ndistorted0:start\ndistorted0:note:s2:f4\ndistorted0:nfx:pluck\ndistorted0:end"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 180,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 13,
+        "token_validity": 0.3846,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:2\ntempo:180\nstart\ndistorted0:wait:12\ndistorted0:start\ndistorted0:new_measure\ndistorted0:note:s2:f5\ndistorted0:wait:12\ndistorted0:new_measure\ndistorted0:nfx:palm_mute\ndistorted0:note:s3:f4\ndistorted0:wait:12\ndistorted0:end"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 200,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 25,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:0\ntempo:200\nstart\ndrums:note:36\nnew_measure\ndistorted0:note:s2:f1\nnfx:palm_mute\nnew_measure\ndistorted0:note:s5:f2\nwait:8\nnew_measure\ndistorted0:note:s4:f3\nwait:8\nnew_measure\ndistorted0:note:s3:f4\nwait:8\nnew_measure\ndistorted0:note:s5:f3\nwait:8\nnew_measure\ndistorted0:note:s4:f2\nwait:8\nnew_measure\ndistorted0:note:s3:f1\nend"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 200,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 26,
+        "token_validity": 0.7692,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:2\ntempo:200\nstart\ndistorted0:note:s6:f0 wait:8\ndistorted0:nfx:palm_mute wait:8\ndistorted0:note:s5:f1 wait:8\ndistorted0:nfx:palm_mute wait:8\ndistorted0:note:s4:f2 wait:8\ndistorted0:nfx:palm_mute wait:8\ndistorted0:note:s3:f3 wait:8\ndistorted0:nfx:palm_mute wait:8\ndistorted0:note:s2:f4 wait:8\ndistorted0:nfx:palm_mute wait:8\ndistorted0:note:s1:f5 wait:8\ndistorted"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 14,
+        "token_validity": 1.0,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:0\ntempo:120\nstart\ndistorted0:note:s2:f1\ndistorted0:note:s3:f2\nwait:96\ndrums:note:36\nnfx:palm_mute\nwait:96\ndistorted0:note:s2:f1\ndistorted0:note:s3:f2\nwait:96\ndrums:note:36\nend"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 23,
+        "token_validity": 1.0,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:2\ntempo:120\nstart\ndistorted0:note:s2:f0 wait:8\ndistorted0:note:s3:f1 nfx:palm_mute wait:8\ndistorted0:note:s4:f2 wait:8\ndistorted0:note:s5:f3 nfx:palm_mute wait:8\ndistorted0:note:s6:f4 wait:8\ndistorted0:note:s7:f5 nfx:palm_mute wait:8\ndistorted0:note:s1:f6 wait:8\ndistorted0:note:s2:f0\ndrums:note:36\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 16,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:0\ntempo:120\nstart\nnew_measure\ndistorted0:note:s5:f2\ndistorted0:note:s4:f3\nbass:note:s4:f1\ndrums:note:36\nwait:240\ndistorted0:note:s6:f3\ndistorted0:note:s5:f2\nwait:240\ndistorted0:note:s6:f1\nbass:note:s3:f0\nwait:240\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 15,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:2\ntempo:120\nstart\nnew_measure\ndistorted0:note:s2:f1\nbass:note:s2:f0\ndistorted0:note:s3:f2\nwait:720\ndistorted0:note:s4:f3\nwait:720\ndistorted0:note:s5:f0\nwait:720\ndistorted0:note:s6:f2\nwait:720\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 160,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 16,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:0\ntempo:160\nstart\nnew_measure\ndistorted0:note:s5:f2\ndistorted0:note:s4:f2\ndistorted0:note:s3:f2\ndistorted0:note:s4:f0\ndistorted0:note:s5:f2\nwait:960\ndistorted0:note:s6:f2\ndistorted0:note:s5:f2\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\nwait:960\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 160,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 15,
+        "token_validity": 0.6,
+        "has_measure": true,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "downtune:2\ntempo:160\nstart\nnew_measure\ndistorted0:note:s2:f#1\ndistorted0:note:s3:f#0\ndistorted0:note:s4:f#2\ndistorted0:note:s5:f#1\nwait:720\nnew_measure\ndistorted0:note:s6:f#0\nbass:note:s5:f#0\ndrums:note:36\nwait:720\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 180,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 21,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:0\ntempo:180\nstart\nnew_measure\ndistorted0:note:s2:f1\ndistorted0:note:s4:f2\ndistorted0:note:s5:f3\nbass:note:s4:f3\ndrums:note:36\nwait:480\ndistorted0:note:s5:f2\nwait:480\ndistorted0:note:s6:f3\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s7:f1\nbass:note:s6:f1\ndrums:note:36\nwait:480\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 180,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 14,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:2\ntempo:180\nstart\nnew_measure\ndistorted0:note:s2:f1\ndistorted0:note:s3:f0\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\nbass:note:s5:f0\ndrums:note:36\nwait:720\ndistorted0:note:s6:f3\nwait:720\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 200,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 20,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:0\ntempo:200\nstart\nnew_measure\ndistorted0:note:s2:f3\ndistorted0:note:s3:f3\nbass:note:s4:f0\ndistorted0:note:s4:f2\nwait:480\ndrums:note:40\nwait:480\ndistorted0:note:s5:f3\ndrums:note:40\nwait:480\ndistorted0:note:s5:f2\ndrums:note:40\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 200,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 15,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:2\ntempo:200\nstart\nnew_measure\ndistorted0:note:s2:f0\ndistorted0:note:s3:f0\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f2\nwait:960\ndistorted0:note:s6:f3\ndistorted0:note:s5:f3\ndistorted0:note:s4:f3\nwait:960\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 19,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:0\ntempo:120\nstart\nnew_measure\ndrums:note:36\nnew_measure\ndistorted0:note:s4:f2\nbass:note:s5:f0\ndistorted0:note:s6:f2\nnew_measure\ndistorted0:note:s6:f3\nwait:960\nnew_measure\ndistorted0:note:s5:f2\ndrums:note:48\nwait:480\nnew_measure\ndistorted0:note:s6:f3\nend"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 18,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "downtune:2\ntempo:120\nstart\nnew_measure\ndrums:note:36\ndrums:note:36\ndistorted0:note:s2:f4\ndistorted0:note:s3:f4\ndistorted0:note:s4:f4\nnew_measure\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f0\nbass:note:s5:f0\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend"
+    }
+  ]
+}
