@@ -49,6 +49,7 @@ Baseline details: `results/baseline_qwen3b.json` (zero-shot vs one-shot, 10 gene
     ├── dadagp_metrics.py      # meter correctness + structural richness
     ├── decodability_check.py  # gold check: run the official decoder on generations
     ├── baseline_killtest.py   # generate with the base model, score it (the "before")
+    ├── train_qlora.py         # QLoRA training loop (4-bit NF4 + LoRA, 8GB-friendly)
     └── render.py              # tokens → WAV via a scrappy numpy synth (dev-time demo)
 ```
 
@@ -70,7 +71,8 @@ python src/render.py data/samples/progmetal.tokens.txt demo.wav  # press play
 ## Roadmap
 1. ~~Eval harness calibrated on real DadaGP data~~ ✅
 2. ~~Baseline kill-test on the base model (the "before" numbers)~~ ✅
-3. Training smoke-test: tiny QLoRA overfit on the sample songs (verifies the local loop).
+3. ~~Training smoke-test: tiny QLoRA overfit on the sample songs~~ ✅
+   (loss 0.57→0.15 in 40 steps, peak 4.4 GiB VRAM — 4-bit bitsandbytes works on Windows)
 4. Corpus lands → real QLoRA fine-tune with conditioning tags (tempo, downtune, genre).
 5. Re-run eval → "after" numbers; add novelty metric (n-gram overlap vs training set).
 6. Writeup with before/after charts + audio demos (MIDI + guitar soundfont).
