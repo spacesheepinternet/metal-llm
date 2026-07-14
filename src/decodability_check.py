@@ -19,6 +19,8 @@ Usage:
 """
 import argparse, json, os, subprocess, sys, tempfile
 
+from dadagp_validity import is_valid_token
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -28,6 +30,19 @@ def normalize(text: str) -> str:
         return ""
     if not lines[0].startswith("artist:"):
         lines = ["artist:unknown"] + lines
+    return "\n".join(lines)
+
+
+def close_truncated(text: str) -> str:
+    """Repair a generation cut off by the token budget: drop the trailing
+    partial token(s), ensure a final `end`. Music LMs generate until the
+    budget runs out, so this is measured as a separate, clearly-labeled rate
+    (decodable-after-close) alongside the raw one."""
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    while lines and not is_valid_token(lines[-1]):
+        lines.pop()
+    if lines and lines[-1] != "end":
+        lines.append("end")
     return "\n".join(lines)
 
 
@@ -69,19 +84,22 @@ def main():
     by_cond = {}
     for g in data["generations"]:
         cond = g["cond"]
-        ok, err = try_decode(g["text"], args.dadagp_dir)
-        rec = by_cond.setdefault(cond, {"ok": 0, "n": 0, "errs": []})
+        ok_raw, err = try_decode(g["text"], args.dadagp_dir)
+        ok_closed, err_c = (True, "") if ok_raw else \
+            try_decode(close_truncated(g["text"]), args.dadagp_dir)
+        rec = by_cond.setdefault(cond, {"ok": 0, "ok_closed": 0, "n": 0, "errs": []})
         rec["n"] += 1
-        rec["ok"] += ok
-        if not ok:
-            rec["errs"].append(err)
+        rec["ok"] += ok_raw
+        rec["ok_closed"] += ok_closed
+        if not ok_closed:
+            rec["errs"].append(err_c or err)
 
     print("===== DECODABILITY GOLD-CHECK (does it actually decode to a playable file?) =====")
     for cond, r in by_cond.items():
-        rate = r["ok"] / r["n"] if r["n"] else 0
-        print(f"\n{cond}: {r['ok']}/{r['n']} decode successfully ({rate:.0%})")
+        print(f"\n{cond}: raw {r['ok']}/{r['n']} ({r['ok']/r['n']:.0%})  |  "
+              f"after truncation-close {r['ok_closed']}/{r['n']} ({r['ok_closed']/r['n']:.0%})")
         if r["errs"]:
-            print("  sample failures:")
+            print("  sample failures (after close):")
             for e in r["errs"][:5]:
                 print(f"    - {e}")
 

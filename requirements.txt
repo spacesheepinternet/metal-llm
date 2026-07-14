@@ -9,7 +9,7 @@ datasets
 huggingface_hub
 
 # DadaGP decode/render path
-pyguitarpro           # required by the official DadaGP encoder/decoder
+pyguitarpro==0.6      # required by the official DadaGP encoder/decoder (newer versions break its Color/API usage)
 scipy                 # WAV writing for the dev-time numpy synth
 
 # Experiment tracking (optional but recommended)

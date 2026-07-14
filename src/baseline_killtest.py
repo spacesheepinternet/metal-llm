@@ -57,6 +57,8 @@ def build_messages(tempo: int, downtune: int, one_shot: bool):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="Qwen/Qwen2.5-3B-Instruct")
+    ap.add_argument("--adapter", default=None,
+                    help="path to a trained LoRA adapter — turns this into the 'after' run")
     ap.add_argument("--n", type=int, default=12)
     ap.add_argument("--max-new-tokens", type=int, default=160)
     ap.add_argument("--out", default="baseline_results.json")
@@ -64,10 +66,13 @@ def main():
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     dtype = torch.float16 if device == "cuda" else torch.float32
-    print(f"[env] device={device} dtype={dtype} model={args.model}")
+    print(f"[env] device={device} dtype={dtype} model={args.model} adapter={args.adapter}")
 
     tok = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype=dtype).to(device)
+    if args.adapter:
+        from peft import PeftModel
+        model = PeftModel.from_pretrained(model, args.adapter)
     model.eval()
 
     # vary the requested header per generation (also seeds the conditioning idea)
@@ -101,7 +106,8 @@ def main():
               f"seq_validity_rate={s['seq_validity_rate']}")
 
     with open(args.out, "w", encoding="utf-8") as f:
-        json.dump({"model": args.model, "summary": summary, "generations": generations},
+        json.dump({"model": args.model, "adapter": args.adapter,
+                   "summary": summary, "generations": generations},
                   f, indent=2)
     print(f"\nsaved -> {args.out}")
 

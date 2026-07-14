@@ -12,7 +12,7 @@ Two modes:
 Usage:
   python src/train_qlora.py --smoke-test
 """
-import argparse, glob, os
+import argparse, glob, json, os
 
 import torch
 from datasets import Dataset
@@ -25,10 +25,14 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def load_token_texts(paths: list[str]) -> list[str]:
+    """Accepts raw *.tokens.txt files or prepared *.jsonl (one song per record)."""
     texts = []
     for p in paths:
         with open(p, encoding="utf-8") as f:
-            texts.append(f.read())
+            if p.endswith(".jsonl"):
+                texts.extend(json.loads(line)["text"] for line in f if line.strip())
+            else:
+                texts.append(f.read())
     return texts
 
 
@@ -46,7 +50,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="Qwen/Qwen2.5-3B-Instruct")
     ap.add_argument("--smoke-test", action="store_true")
-    ap.add_argument("--data-glob", default=os.path.join(REPO_ROOT, "data", "corpus", "*.txt"))
+    ap.add_argument("--data-glob",
+                    default=os.path.join(REPO_ROOT, "data", "prepared", "train.jsonl"),
+                    help="prepared train.jsonl (from prepare_data.py) or a glob of *.tokens.txt")
     ap.add_argument("--seq-len", type=int, default=512)
     ap.add_argument("--steps", type=int, default=40)
     ap.add_argument("--out", default=os.path.join(REPO_ROOT, "outputs", "qlora"))
