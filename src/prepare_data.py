@@ -17,10 +17,13 @@ Usage:
   python src/prepare_data.py --in data/samples --out data/prepared      # dry-run on the 2 samples
   python src/prepare_data.py --in data/corpus --genres data/genres.json
 """
-import argparse, glob, hashlib, json, os
+import argparse, glob, hashlib, json, os, re
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VAL_FRAC = 0.05
+
+# frets -1/-2 on the lowest string are how DadaGP encodes drop tunings
+_DROP_RE = re.compile(r":note:s[1-7]:f-[12]\b")
 
 
 def extract_meta(text: str) -> dict:
@@ -82,6 +85,7 @@ def main():
         with open(p, encoding="utf-8") as f:
             text = f.read().strip()
         meta = extract_meta(text)
+        meta["drop_tuning"] = bool(_DROP_RE.search(text))
         genre = lookup_genre(stem, meta, genres)
         if genre:
             text = f"genre:{genre}\n{text}"

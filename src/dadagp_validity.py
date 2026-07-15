@@ -28,7 +28,7 @@ TOKEN_PATTERNS = [
     r"measure:repeat_close:\d+",
     r"measure:repeat_alternative:\d+",
     r"wait:\d+",                                    # time advance in ticks (960/quarter)
-    rf"{_INSTR}:note:s[1-7]:f\d+",                  # pitched note: string 1-7, fret >=0
+    rf"{_INSTR}:note:s[1-7]:f-?\d+",                # pitched note: string 1-7 (frets -1/-2 = drop tuning)
     r"drums:note:\d+",                              # drum hit: MIDI percussion number
     rf"{_INSTR}:rest",                              # instrument rest
     r"nfx:.+",                                      # note effects (palm_mute, dead, tie, slide, bend...)
@@ -37,9 +37,11 @@ TOKEN_PATTERNS = [
 ]
 _TOKEN_RE = re.compile(r"^(?:%s)$" % "|".join(TOKEN_PATTERNS))
 
-# extra range sanity for pitched notes (a guitar/bass isn't 90 frets)
-_NOTE_RE = re.compile(rf"^{_INSTR}:note:s([1-7]):f(\d+)$")
+# extra range sanity for pitched notes (a guitar/bass isn't 90 frets;
+# -1/-2 encode drop tuning on the lowest string, nothing lower exists)
+_NOTE_RE = re.compile(rf"^{_INSTR}:note:s([1-7]):f(-?\d+)$")
 MAX_FRET = 36  # generous; real tabs rarely exceed ~24
+MIN_FRET = -2
 
 
 def is_valid_token(tok: str) -> bool:
@@ -48,7 +50,7 @@ def is_valid_token(tok: str) -> bool:
     if not tok or not _TOKEN_RE.match(tok):
         return False
     m = _NOTE_RE.match(tok)
-    if m and int(m.group(2)) > MAX_FRET:
+    if m and not (MIN_FRET <= int(m.group(2)) <= MAX_FRET):
         return False
     return True
 
