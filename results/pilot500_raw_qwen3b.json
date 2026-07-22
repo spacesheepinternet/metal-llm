@@ -1,0 +1,171 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "adapter": "outputs/pilot-cloud/final",
+  "summary": {
+    "raw_prefix": {
+      "n": 12,
+      "mean_token_validity": 0.9855,
+      "seq_validity_rate": 0.25,
+      "pct_with_measure": 1.0,
+      "pct_with_note": 0.25
+    }
+  },
+  "generations": [
+    {
+      "cond": "raw_prefix",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9535,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:0\ntempo:120\nstart\nnew_measure\nmeasure:triplet_feel:1\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:960\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nnew_measure\nmeasure:triplet_feel:1\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:960\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nnew_measure\nmeasure:triplet_feel:1\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:960\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:2\ntempo:120\nstart\nnew_measure\nmeasure:repeat_open\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\nwait:240\ndistorted0:note:s4:f9\ndistorted0:note:s5:f9\ndistorted0:note:s6:f7\nbass:note:s5:f7\ndrums:note:49\ndrums:note:38\ndrums:note:35\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 160,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:0\ntempo:160\nstart\nnew_measure\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\ndrums:note:35\ndrums:note:36\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\ndrums:note:38\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\ndrums:note:35\ndrums:note:36\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\ndrums:note:38\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\ndrums:note:35\ndrums:note:36\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\ndrums:note:38\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\ndrums:note:35\ndrums:note:36\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\ndrums:note:38\nwait:480\nnew_measure\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f7\nleads:rest\ndrums:note:46\ndrums:note:35\ndrums:note:36\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f7\nleads:rest\ndrums:note:46\ndrums:note:38\nwait:480\ndistorted0:rest\ndistorted1:rest\nbass:note:s5:f7\nleads:rest\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 160,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:2\ntempo:160\nstart\nnew_measure\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nleads:rest\npads:rest\nleads:rest\nbass:rest\ndrums:rest\nwait:1920\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\nwait:120\nleads:rest\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 180,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:0\ntempo:180\nstart\nnew_measure\ndistorted0:rest\nclean0:rest\nbass:rest\nclean0:rest\nleads:rest\npads:rest\ndrums:rest\nwait:480\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 180,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:2\ntempo:180\nstart\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:1920\ndistorted0:rest\ndistorted1:rest\nwait:480\ndistorted0:rest\ndistorted1:rest\nwait:480\nnew_measure\nmeasure:repeat_close:1\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:1920\ndistorted0:rest\ndistorted1:rest\nwait:480\ndistorted0:rest\ndistorted1:rest\nwait:480\nnew_measure\nmeasure:repeat_close:1\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:1920\ndistorted0:rest\ndistorted1:rest\nwait:480\ndistorted0:rest\ndistorted1:rest\nwait:480\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:3840\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:3840\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:3840\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:3840\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:3840\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:3840\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nwait:3840\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 200,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:0\ntempo:200\nstart\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nleads:rest\ndistorted0:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nleads:rest\ndistorted0:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nleads:rest\ndistorted0:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\nleads:rest\ndrums:rest\nwait:960\ndistorted0:rest\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 200,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:2\ntempo:200\nstart\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nleads:rest\nclean0:rest\nclean1:rest\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\nleads:rest\nwait:240\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:0\ntempo:120\nstart\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\nleads:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\nleads:rest\ndistorted2:rest\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:2\ntempo:120\nstart\nnew_measure\nmeasure:repeat_open\nleads:rest\ndistorted0:rest\ndistorted1:rest\nclean0:rest\nclean1:rest\nbass:rest\nwait:960\nleads:rest\nnfx:tie\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nnew_measure\nleads:rest\ndistorted0:rest\ndistorted1:rest\nclean0:rest\nclean1:rest\nbass:rest\nwait:960\nleads:rest\nnfx:tie\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nnew_measure\nleads:rest\ndistorted0:rest\ndistorted1:rest\nclean0:rest\nclean1:rest\nbass:rest\nwait:960\nleads:rest\nnfx:tie\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nnew_measure\nleads:rest\ndistorted0:rest\ndistorted1:rest\nclean0:rest\nclean1:rest\nbass:rest\nwait:960\nleads:rest\nnfx:tie\nwait:480\nleads:rest\nwait:480\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 160,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:0\ntempo:160\nstart\nnew_measure\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndistorted2:rest\nleads:rest\ndistorted1:rest\nclean0:rest\nleads:rest\nbass:note:s5:f0\nleads:rest\nleads:rest\ndrums:note:46\nwait:240\ndistorted1:rest\nleads:rest\nwait:240\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nwait:240\ndistorted1:rest\nleads:rest\nwait:240\ndistorted0:rest\ndistorted1:rest\nbass:rest\nleads:rest\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\nwait:240\nbass:rest\nwait:240\ndistorted0:rest\ndistorted1:rest\nbass:rest\nleads:rest\ndrums:rest\nwait:240\nleads:rest\nwait:240\ndistorted0:rest\ndistorted1:rest\nbass:rest\nleads:rest\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\nwait:240\ndistorted0:rest\ndistorted1:rest\nleads:rest\nwait:240\ndistorted0:rest\ndistorted1:rest\nbass:rest\nleads:rest\ndrums:rest\nwait:240\nleads:rest\nwait:240\nnew_measure\ndistorted0:rest\ndistorted1:rest\nbass:rest\nleads:rest\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:46\nwait:240\ndistorted1:rest\nleads:rest\nwait:240\ndistorted0:rest\ndistorted1:rest\n"
+    },
+    {
+      "cond": "raw_prefix",
+      "tempo": 160,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 86,
+        "token_validity": 0.9884,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "genre:metal\nartist:unknown_artist\ndowntune:2\ntempo:160\nstart\nnew_measure\nmeasure:repeat_open\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nwait:960\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\nleads:rest\nwait:480\n"
+    }
+  ]
+}

@@ -61,6 +61,12 @@ def main():
                     help="path to a trained LoRA adapter — turns this into the 'after' run")
     ap.add_argument("--n", type=int, default=12)
     ap.add_argument("--max-new-tokens", type=int, default=160)
+    ap.add_argument("--raw-prefix", action="store_true",
+                    help="prompt with a training-format header prefix instead of "
+                         "chat messages — the native interface of a raw-LM "
+                         "fine-tune; scores prefix+continuation as one song")
+    ap.add_argument("--repetition-penalty", type=float, default=1.0,
+                    help="counter rest/wait degeneration loops (1.0 = off)")
     ap.add_argument("--out", default="baseline_results.json")
     args = ap.parse_args()
 
@@ -85,19 +91,29 @@ def main():
     results = {"zero_shot": [], "one_shot": []}
     generations = []
 
-    for cond in ("zero_shot", "one_shot"):
+    conds = ("raw_prefix",) if args.raw_prefix else ("zero_shot", "one_shot")
+    if args.raw_prefix:
+        results = {"raw_prefix": []}
+    for cond in conds:
         for i in range(args.n):
             tempo, downtune = headers[i % len(headers)]
-            msgs = build_messages(tempo, downtune, one_shot=(cond == "one_shot"))
-            prompt = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+            if cond == "raw_prefix":
+                prompt = (f"genre:metal\nartist:unknown_artist\n"
+                          f"downtune:{downtune}\ntempo:{tempo}\nstart\nnew_measure\n")
+            else:
+                msgs = build_messages(tempo, downtune, one_shot=(cond == "one_shot"))
+                prompt = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
             inputs = tok(prompt, return_tensors="pt").to(device)
             with torch.no_grad():
                 out = model.generate(**inputs, max_new_tokens=args.max_new_tokens,
                                      do_sample=True, temperature=0.8, top_p=0.95,
+                                     repetition_penalty=args.repetition_penalty,
                                      pad_token_id=tok.eos_token_id)
             gen = tok.decode(out[0][inputs.input_ids.shape[1]:], skip_special_tokens=True)
             # strip common markdown fences the model may wrap around output
             gen = re.sub(r"```[a-z]*", "", gen)
+            if cond == "raw_prefix":
+                gen = prompt + gen  # the song is prefix + continuation
             r = validate_sequence(gen)
             results[cond].append(r)
             generations.append({"cond": cond, "tempo": tempo, "downtune": downtune,

@@ -26,6 +26,9 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def normalize(text: str) -> str:
     lines = [l.strip() for l in text.splitlines() if l.strip()]
+    # genre: lines are our conditioning control tokens, not DadaGP —
+    # strip-before-decode by design (see prepare_data.py)
+    lines = [l for l in lines if not l.startswith("genre:")]
     if not lines:
         return ""
     if not lines[0].startswith("artist:"):
@@ -57,8 +60,21 @@ def try_decode(tokens: str, dadagp_dir: str) -> tuple[bool, str]:
         tout = os.path.join(d, "gen.gp5")
         with open(tin, "w", encoding="utf-8") as f:
             f.write(norm)
+        # dadagp_decode hardcodes verbose=True, whose debug print indexes
+        # tracks[0] and IndexErrors on some valid track combinations — call
+        # tokens2guitarpro(verbose=False) directly instead of the CLI.
+        snippet = (
+            "import sys, guitarpro; from dadagp import tokens2guitarpro\n"
+            f"tokens = open(r'{tin}', encoding='utf-8').read().split('\\n')\n"
+            "song = tokens2guitarpro(tokens, verbose=False)\n"
+            "if not song.tracks:\n"
+            "    print('all-rests: no instrument plays a note', file=sys.stderr)\n"
+            "    sys.exit(3)\n"
+            "song.artist = tokens[0]; song.title = 'untitled'\n"
+            f"guitarpro.write(song, r'{tout}')\n"
+        )
         try:
-            p = subprocess.run([sys.executable, dadagp, "decode", tin, tout],
+            p = subprocess.run([sys.executable, "-c", snippet],
                                capture_output=True, text=True, timeout=120,
                                cwd=dadagp_dir)
         except subprocess.TimeoutExpired:
