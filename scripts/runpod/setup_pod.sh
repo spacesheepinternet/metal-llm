@@ -15,6 +15,9 @@ cd "$(dirname "$0")/../.."
 
 # torch ships with the RunPod PyTorch template — don't touch it.
 # Pins mirror the laptop stack that pilot attempt #5 trained on.
+# Ubuntu 24.04 images mark python externally-managed (PEP 668); the pod is
+# disposable, so overriding is safe.
+export PIP_BREAK_SYSTEM_PACKAGES=1
 pip install -q "transformers==5.13.1" "peft==0.19.1" "bitsandbytes>=0.49" \
     accelerate "datasets>=5" "huggingface_hub>=1.24" numpy tqdm
 
