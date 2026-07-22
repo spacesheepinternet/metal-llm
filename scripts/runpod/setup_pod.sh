@@ -14,13 +14,12 @@ cd "$(dirname "$0")/../.."
 : "${DATA_REPO:?set DATA_REPO pod env var (e.g. youruser/metal-llm-data)}"
 
 # torch ships with the RunPod PyTorch template — don't touch it.
-pip install -q "transformers==4.49.0" "peft==0.19.1" "bitsandbytes>=0.45" \
-    accelerate datasets "huggingface_hub[hf_transfer]" numpy tqdm
+# Pins mirror the laptop stack that pilot attempt #5 trained on.
+pip install -q "transformers==5.13.1" "peft==0.19.1" "bitsandbytes>=0.49" \
+    accelerate "datasets>=5" "huggingface_hub>=1.24" numpy tqdm
 
-export HF_HUB_ENABLE_HF_TRANSFER=1
 mkdir -p data/prepared data/corpus/DadaGP-v1.1
-huggingface-cli download "$DATA_REPO" --repo-type dataset \
-    --local-dir data/prepared
+hf download "$DATA_REPO" --repo-type dataset --local-dir data/prepared
 # vocab json lives where train_qlora.py expects it by default
 mv -f data/prepared/_DadaGP_all_tokens.json data/corpus/DadaGP-v1.1/
 
