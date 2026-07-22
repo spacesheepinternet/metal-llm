@@ -1,0 +1,334 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "adapter": "outputs/pilot-cloud/final",
+  "summary": {
+    "zero_shot": {
+      "n": 12,
+      "mean_token_validity": 0.9722,
+      "seq_validity_rate": 0.3333,
+      "pct_with_measure": 0.5833,
+      "pct_with_note": 0.75
+    },
+    "one_shot": {
+      "n": 12,
+      "mean_token_validity": 1.0,
+      "seq_validity_rate": 0.8333,
+      "pct_with_measure": 0.8333,
+      "pct_with_note": 0.9167
+    }
+  },
+  "generations": [
+    {
+      "cond": "zero_shot",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "leads:note:s2:f19\ndistorted0:rest\nbass:rest\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:240\nleads:note:s2:f19\ndistorted0:rest\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "wait:480\nnew_measure\nleads:rest\nclean0:rest\nwait:1920\nleads:rest\nwait:3840\nend\nnew_measure\nleads:rest\nclean0:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nleads:rest\nclean0:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nleads:rest\nclean0:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nleads:rest\nclean0:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\nleads:rest\nwait:960\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 160,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 79,
+        "token_validity": 0.9747,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "clean0:note:s6:f0\nclean0:note:s6:f0\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 160,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "clean0:note:s3:f12\nnfx:staccato\nclean0:note:s6:f0\nleads:rest\ndistorted0:rest\nwait:1920\nend\nleads:note:s2:f19\nnew_measure\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:960\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f14\nclean0:note:s6:f2\nleads:rest\nwait:480\nclean0:note:s3:f13\nclean0:note:s4:f12\nleads:rest\nwait:960\nclean0:note:s3:f13\nclean0:note:s4:f12\nleads:rest\nwait:480\nclean0:note:s3:f13\nclean0:note:s4:f12\nleads:rest\nwait:480\nclean0:note:s3:f13\nclean0:note:s4:f12\nleads:rest\nwait:480\nclean0:note:s3:f13\nclean0:note:s4:f12\nleads:rest\nwait:480\nclean0:note:s3:f13\nclean0:note:s4:f12\nleads:rest\nwait:480\nclean0:note:s3:f13\nclean0:note:s4:f12\nleads:rest\nwait:480\nclean0:note:s3:f13\nclean0:note:s4:f12\nleads:rest\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 180,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "leads:rest\nwait:3840\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:3840\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:3840\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:1920\nnew_measure\nleads:rest\nmeasure:repeat_close:1\nwait:960\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:1920\nnew_measure\nleads:rest\nmeasure:repeat_close:1\nwait:960\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:1920\nnew_measure\nleads:rest\nmeasure:repeat_close:1\nwait:960\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:1920\nnew_measure\nleads:rest\nmeasure:repeat_close:1\nwait:960\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:1920\nnew_measure\nleads:rest\nmeasure:repeat_close:1\nwait:960\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:1920\nnew_measure\nleads:rest\nmeasure:repeat_close:1\nwait:960\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:1920\nnew_measure\nleads:rest\nmeasure:repeat_close:1\nwait:960\nnew_measure\nleads:rest\nmeasure:repeat_open\nleads:rest\nwait:1920\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 180,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 26,
+        "token_validity": 0.6923,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "leads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19\nleads:rest\nleads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19leads:note:s2:f19"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 200,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "clean0:note:s6:f0\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\npads:note:s3:f5\nclean0:note:s6:f0\nclean0:note:s6:f12\nclean0:note:s6:f12\nnfx:let_ring\nleads:rest\nclean0:note:s6:f0\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 200,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "clean0:note:s6:f4\nwait:240\nclean0:note:s6:f6\nwait:240\nnew_measure\nmeasure:repeat_open\nclean0:note:s6:f0\nwait:240\nclean0:note:s6:f0\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\nclean0:note:s6:f12\nwait:240\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "clean0:note:s6:f4\nleads:rest\nwait:480\nclean0:note:s6:f10\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\nclean0:note:s6:f10\nleads:rest\nwait:480\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "clean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nclean0:rest\nclean0:note:s6:f10\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nclean0:note:s6:f10\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 160,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "wait:3840\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\n"
+    },
+    {
+      "cond": "zero_shot",
+      "tempo": 160,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "clean0:rest\nleads:note:s2:f19\ndistorted0:rest\nleads:rest\nwait:1920\nbass:rest\nwait:1920\nleads:rest\nwait:1920\nnew_measure\nclean0:rest\nleads:note:s2:f19\nleads:rest\nwait:1920\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:note:s2:f19\nleads:rest\nwait:1920\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:note:s2:f19\nleads:rest\nwait:1920\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:note:s2:f19\nleads:rest\nwait:1920\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:note:s2:f19\nleads:rest\nwait:1920\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:note:s2:f19\nleads:rest\nwait:1920\nleads:rest\nwait:1920\nleads:rest\nwait:960\nleads:rest\nwait:960\nnew_measure\nclean0:rest\nleads:note:s2:f19\nleads:rest\nwait:1920\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "distorted0:rest\nclean0:rest\ndistorted1:rest\nbass:rest\ndrums:note:36\nwait:720\nclean0:rest\nwait:240\nclean0:rest\nwait:240\nclean0:rest\nwait:240\nclean0:rest\nwait:240\nnew_measure\nmeasure:repeat_open\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\nwait:480\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\nwait:480\nnew_measure\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\nwait:480\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s6:f2\nbass:note:s5:f2\nwait:480\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "wait:960\nclean0:rest\nwait:1920\nend\nwait:960\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend\nclean0:rest\nwait:480\nclean0:rest\nwait:480\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:rest\ndrums:rest\nwait:480\nclean0:rest\nwait:480\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend\nclean0:rest\nwait:480\nclean0:rest\nwait:480\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:rest\ndrums:rest\nwait:480\nclean0:rest\nwait:480\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend\nclean0:rest\nwait:480\nclean0:rest\nwait:480\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 160,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": false,
+        "has_note": true,
+        "valid": false
+      },
+      "text": "clean0:rest\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f7\ndrums:rest\nwait:480\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\nwait:240\nbass:note:s5:f7\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 160,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": false,
+        "has_note": false,
+        "valid": false
+      },
+      "text": "leads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nleads:rest\nclean0:rest\ndistorted0:rest\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 180,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "measure:repeat_open\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:240\ndistorted0:note:s6:f3\nwait:240\ndistorted0:note:s6:f0\nwait:240\nbass:note:s5:f0\nwait:240\ndistorted0:note:s6:f2\nbass:note:s5:f2\nbass:note:s5:f2\nbass:note:s5:f2\ndrums:note:36\nwait:240\ndistorted0:note:s6:f0\nwait:240\ndistorted0:note:s6:f2\nbass:note:s5:f2\nbass:note:s5:f2\nbass:note:s5:f2\ndrums:note:36\nwait:240\ndistorted0:note:s6:f0\nwait:240\ndistorted0:note:s6:f2\nbass:note:s5:f2\nbass:note:s5:f2\nbass:note:s5:f2\ndrums:note:40\nnfx:grace:fret40\nparam:duration128:dead0:beat0:transition1\nwait:240\ndistorted0:note:s6:f0\nwait:240\nnew_measure\ndistorted0:note:s3:f2\ndistorted0:note:s4:f2\ndistorted0:note:s5:f0\nbass:note:s4:f0\ndrums:note:36\nwait:240\ndistorted0:note:s2:f2\ndistorted0:note:s5:f0\nbass:note:s4:f0\nwait:240\ndistorted0:note:s4:f2\ndistorted0:note:s5:f0\nbass:note:s4:f0\nwait:240\ndistorted0:note:s3:f2\ndistorted0:note:s4:f2\ndistorted0:note:s5:f0\nbass:note:s4:f0\ndrums:note:36\nwait:240\ndistorted0:note:s2:f3\ndistorted0:note:s4:f2\ndistorted0:note:s5:f0\nbass:note:s4:f2\ndrums:note:36\nwait:240\ndistorted0:note:s2:f2\ndistorted0:note:s4:f2\ndistorted0:note:s5:f0\nbass:note:s4:f0\nwait:240\ndistorted0:note:s4:f2\ndistorted0:note:s5:f0\nbass:note:s4:f0\nwait:240\ndistorted0:note:s3:f2\ndistorted0:note:s4:f2\ndistorted0:note:s5:f0\nbass:note:s4:f0\ndrums:note:36\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 180,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "clean0:note:s6:f12\nclean0:note:s6:f0\nleads:rest\nwait:1920\nclean0:note:s6:f12\nclean0:note:s6:f0\nleads:rest\nwait:1920\nend\nclean0:note:s6:f12\nclean0:note:s6:f0\nleads:rest\nwait:1920\nend\nclean0:note:s6:f12\nclean0:note:s6:f0\nleads:rest\nwait:1920\nend\nclean0:note:s6:f12\nclean0:note:s6:f0\nleads:rest\nwait:960\nend\nclean0:note:s6:f12\nclean0:note:s6:f0\nleads:rest\nwait:960\nend\nclean0:note:s6:f12\nclean0:note:s6:f0\nleads:rest\nwait:960\nend\nclean0:note:s6:f12\nclean0:note:s6:f0\nleads:rest\nwait:960\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:960\ndistorted0:note:s6:f3\nwait:960\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:960\ndistorted0:note:s6:f3\nwait:960\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:960\ndistorted0:note:s6:f3\nwait:960\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:960\ndistorted0:note:s6:f3\nwait:960\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:960\ndistorted0:note:s6:f3\nwait:960\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 200,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "tempo:120\nstart\nclean0:rest\ndistorted0:rest\nbass:rest\ndrums:rest\nwait:1920\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend\nleads:rest\nleads:rest\nwait:480\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s4:f4\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:240\ndrums:note:36\nwait:240\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:240\ndrums:note:36\nwait:240\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend\nleads:rest\nleads:rest\nwait:480\ndistorted0:note:s4:f5\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s4:f3\ndrums:note:36\nwait:480\ndistorted0:note:s4:f5\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s4:f3\ndrums:note:36\nwait:480\ndistorted0:note:s4:f5\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 200,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "new_measure\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s5:f1\ndrums:note:36\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s5:f1\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s5:f1\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s3:f3\nwait:240\ndistorted0:note:s4:f3\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 120,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "clean0:note:s6:f0\nwait:960\ndistorted0:rest\nclean0:rest\nbass:rest\ndrums:rest\nwait:720\ndistorted0:rest\nclean0:rest\nbass:rest\ndrums:rest\nwait:720\ndistorted0:rest\nclean0:rest\nbass:rest\ndrums:rest\nwait:720\ndistorted0:rest\nclean0:rest\nbass:rest\ndrums:rest\nwait:720\ndistorted0:rest\nclean0:rest\nbass:rest\ndrums:rest\nwait:720\ndistorted0:rest\nclean0:rest\nbass:rest\ndrums:rest\nwait:720\nnew_measure\ndistorted0:note:s2:f2\ndistorted0:note:s5:f4\ndistorted0:note:s6:f2\nbass:note:s5:f2\ndrums:note:36\nwait:480\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f2\nwait:480\ndistorted0:note:s6:f3\nbass:note:s5:f2\nwait:480\ndistorted0:note:s5:f2\nbass:note:s5:f2\nwait:480\ndistorted0:note:s4:f5\ndistorted0:note:s5:f5\ndistorted0:note:s6:f3\nbass:note:s5:f3\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nbass:note:s5:f3\nwait:480\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f3\nwait:480\ndistorted0:note:s6:f3\nbass:note:s5:f3\nwait:480\ndistorted0:note:s5:f3\ndistorted0:note:s6:f1\nbass:note:s5:f1\ndrums:note:36\nwait:480\ndistorted0:note:s6:f1\nbass:note:s5:f1\nwait:480\ndistorted0:note:s6:f1\nbass:note:s5:f1\ndrums:note:36\nwait:480\ndistorted0:note:s6:f1\nbass:note:s5:f1\nwait:480\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 120,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "clean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\ndrums:note:36\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\ndrums:note:38\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\ndrums:note:36\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\ndrums:note:38\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\nwait:480\nnew_measure\ndistorted0:note:s4:f0\nnfx:tie\ndistorted0:note:s5:f0\nnfx:tie\ndistorted0:note:s6:f0\nnfx:tie\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\ndrums:note:36\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\ndrums:note:38\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\ndrums:note:36\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\ndrums:note:38\nwait:480\nclean0:rest\nbass:note:s5:f0\nleads:rest\ndrums:note:55\nwait:480\nnew_measure\nmeasure:repeat_open\nclean0:rest\nbass:note:s5:f0\nleads:rest\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 160,
+      "downtune": 0,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "clean0:note:s6:f0\nleads:rest\nwait:1920\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nwait:240\ndrums:rest\nwait:240\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f2\ndrums:note:40\nnfx:grace:fret40\nparam:duration128:dead0:beat0:transition1\nwait:960\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend\ndistorted0:rest\ndistorted1:rest\nbass:rest\ndrums:rest\nwait:240\ndrums:rest\nwait:240\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f2\ndrums:note:40\nnfx:grace:fret40\nparam:duration128:dead0:beat0:transition1\nwait:960\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\n"
+    },
+    {
+      "cond": "one_shot",
+      "tempo": 160,
+      "downtune": 2,
+      "metrics": {
+        "n_tokens": 80,
+        "token_validity": 1.0,
+        "has_measure": true,
+        "has_note": true,
+        "valid": true
+      },
+      "text": "bass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:46\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:note:s5:f2\ndrums:note:46\nwait:480\nbass:note:s5:f0\ndrums:note:36\nwait:480\nbass:note:s5:f3\ndrums:note:46\nwait:480\nbass:note:s5:f3\ndrums:note:36\nwait:480\nbass:note:s5:f2\ndrums:note:46\nwait:480\nend\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\nbass:note:s5:f0\ndrums:note:36\nwait:480\ndistorted0:note:s6:f3\nwait:480\nend\nleads:rest\nbass:note:s4:f2\ndrums:note:46\nwait:480\nbass:note:s4:f2\ndrums:note:36\nwait:480\nbass:note:s4:f2\ndrums:note:46\nwait:480\nbass:note:s4:f2\ndrums:note:36\nwait:480\nbass:note:s4:f2\ndrums:note:46\nwait:480\nbass:note:s4:f2\ndrums:note:36\nwait:480\nbass:note:s4:f2\ndrums:note:46\nwait:480\nend\nleads:rest\nbass:note:s4:f2\ndrums:note:46\nwait:480\nbass:note:s4:f2\ndrums:note:36\nwait:480\nbass:note:s4:f2\ndrums:note:46\nwait:480\nbass:note:s4:f2\ndrums:note:36\nwait:480\nend\nleads:rest\nbass:note:s4:f2\ndrums:note:46\nwait:480\nnew_measure\ndistorted0:note:s4:f2\ndistorted0:note:s5:f2\ndistorted0:note:s6:f0\n"
+    }
+  ]
+}

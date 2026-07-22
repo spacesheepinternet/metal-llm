@@ -72,6 +72,11 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype=dtype).to(device)
     if args.adapter:
         from peft import PeftModel
+        if os.path.exists(os.path.join(args.adapter, "tokenizer_config.json")):
+            # extend-vocab adapters ship their tokenizer; the embedding matrix
+            # must be resized before PEFT overlays the trained token rows
+            tok = AutoTokenizer.from_pretrained(args.adapter)
+            model.resize_token_embeddings(len(tok))
         model = PeftModel.from_pretrained(model, args.adapter)
     model.eval()
 
