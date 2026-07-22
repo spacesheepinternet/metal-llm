@@ -1,0 +1,170 @@
+{
+  "results": "results/pilot500_raw512_rp12_qwen3b.json",
+  "ngram": 8,
+  "pilot_songs": 500,
+  "seed": 42,
+  "generated": {
+    "summary": {
+      "n": 12,
+      "median_novel_rate": 0.996,
+      "min_novel_rate": 0.924,
+      "max_longest_match": 11
+    },
+    "songs": [
+      {
+        "n_tokens": 256,
+        "n_ngrams": 249,
+        "novel_rate": 0.992,
+        "longest_match": 8
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 1.0,
+        "longest_match": 0
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 0.996,
+        "longest_match": 8
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 1.0,
+        "longest_match": 0
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 0.924,
+        "longest_match": 11
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 1.0,
+        "longest_match": 0
+      },
+      {
+        "n_tokens": 256,
+        "n_ngrams": 249,
+        "novel_rate": 0.988,
+        "longest_match": 9
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 1.0,
+        "longest_match": 0
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 1.0,
+        "longest_match": 0
+      },
+      {
+        "n_tokens": 254,
+        "n_ngrams": 247,
+        "novel_rate": 0.9879,
+        "longest_match": 9
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 0.976,
+        "longest_match": 10
+      },
+      {
+        "n_tokens": 257,
+        "n_ngrams": 250,
+        "novel_rate": 0.996,
+        "longest_match": 8
+      }
+    ]
+  },
+  "held_out": {
+    "summary": {
+      "n": 12,
+      "median_novel_rate": 0.9966,
+      "min_novel_rate": 0.6223,
+      "max_longest_match": 27
+    },
+    "songs": [
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.8668,
+        "longest_match": 27
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.9983,
+        "longest_match": 8
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.9966,
+        "longest_match": 8
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.9966,
+        "longest_match": 9
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 1.0,
+        "longest_match": 0
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.6223,
+        "longest_match": 20
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.9966,
+        "longest_match": 8
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.8786,
+        "longest_match": 17
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.9899,
+        "longest_match": 11
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.9224,
+        "longest_match": 15
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 0.8954,
+        "longest_match": 9
+      },
+      {
+        "n_tokens": 600,
+        "n_ngrams": 593,
+        "novel_rate": 1.0,
+        "longest_match": 0
+      }
+    ]
+  }
+}

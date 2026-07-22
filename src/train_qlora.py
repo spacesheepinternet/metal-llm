@@ -25,6 +25,7 @@ import argparse, functools, glob, json, os, random
 
 import numpy as np
 import torch
+from tqdm import tqdm
 from datasets import Dataset
 from huggingface_hub import HfApi
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
@@ -68,15 +69,24 @@ def sample_jsonl_texts(path: str, n: int, seed: int) -> list[str]:
 
 
 def chunk_examples(texts: list[str], tokenizer, seq_len: int,
-                   max_windows: int = 0) -> Dataset:
-    """Tokenize whole songs, slice into fixed-length training windows."""
+                   max_windows: int = 0, cache: str = None) -> Dataset:
+    """Tokenize whole songs, slice into fixed-length training windows.
+    cache: optional .npy path — full-corpus tokenization is ~an hour, and a
+    pod restart shouldn't have to repeat it."""
+    if cache and os.path.exists(cache):
+        windows = list(np.load(cache, allow_pickle=True))
+        print(f"[data] {len(windows)} windows loaded from cache {cache}")
+        return Dataset.from_dict({"input_ids": windows})
     windows = []
-    for t in texts:
+    for t in tqdm(texts, desc="tokenize", unit="song"):
         ids = tokenizer(t, add_special_tokens=False).input_ids
         for i in range(0, max(len(ids) - seq_len, 1), seq_len):
             windows.append(np.asarray(ids[i:i + seq_len], dtype=np.int32))
             if max_windows and len(windows) >= max_windows:
                 return Dataset.from_dict({"input_ids": windows})
+    if cache:
+        np.save(cache, np.asarray(windows, dtype=object), allow_pickle=True)
+        print(f"[data] window cache saved -> {cache}")
     return Dataset.from_dict({"input_ids": windows})
 
 
@@ -129,6 +139,14 @@ def main():
     ap.add_argument("--hub-repo", default=None,
                     help="private HF model repo id (user/name); every checkpoint "
                          "and the final adapter are pushed there")
+    ap.add_argument("--batch-size", type=int, default=1)
+    ap.add_argument("--grad-accum", type=int, default=4)
+    ap.add_argument("--lr", type=float, default=2e-4)
+    ap.add_argument("--lr-scheduler", default="constant",
+                    help="constant for short pilots; cosine for full runs")
+    ap.add_argument("--warmup-steps", type=int, default=2)
+    ap.add_argument("--window-cache", default=None,
+                    help=".npy path to cache tokenized training windows")
     args = ap.parse_args()
 
     if args.smoke_test:
@@ -202,7 +220,7 @@ def main():
         print(f"[vocab] compression on training text: {n_words} DadaGP tokens -> "
               f"{n_bpe} BPE ids ({n_bpe / n_words:.2f} ids per DadaGP token; "
               f"stock tokenizer was ~8.0)")
-    ds = chunk_examples(texts, tok, args.seq_len)
+    ds = chunk_examples(texts, tok, args.seq_len, cache=args.window_cache)
     print(f"[data] {len(ds)} training windows of {args.seq_len} tokens")
 
     eval_ds = None
@@ -216,12 +234,12 @@ def main():
     targs = TrainingArguments(
         output_dir=args.out,
         max_steps=args.steps,
-        per_device_train_batch_size=1,
+        per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=1,
-        gradient_accumulation_steps=4,
-        learning_rate=2e-4,
-        lr_scheduler_type="constant",
-        warmup_steps=2,
+        gradient_accumulation_steps=args.grad_accum,
+        learning_rate=args.lr,
+        lr_scheduler_type=args.lr_scheduler,
+        warmup_steps=args.warmup_steps,
         logging_steps=5,
         bf16=True,
         optim="paged_adamw_8bit",
